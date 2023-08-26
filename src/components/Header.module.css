@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header p {
+    margin-left: 2rem;
+    font-size: xx-large;    
+}
