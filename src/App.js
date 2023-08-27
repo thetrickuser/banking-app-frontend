@@ -3,11 +3,15 @@ import HomePage from "./pages/HomePage";
 import RootLayout from "./pages/RootLayout";
 import About from "./components/About";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import { action as loginAction } from "./pages/LoginPage";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -20,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <LoginPage />,
+        action: loginAction,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
       },
     ],
   },

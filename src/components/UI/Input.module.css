@@ -31,3 +31,7 @@
     color: whitesmoke;
 }
 
+input:focus::placeholder {
+    color: transparent
+}
+
