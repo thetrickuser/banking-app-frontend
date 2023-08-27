@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <p>Psybank</p>
+      <p>Gemini Bank</p>
       <MainNavigation />
     </header>
   );

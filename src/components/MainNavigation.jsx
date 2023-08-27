@@ -1,21 +1,38 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./MainNavigation.module.css";
+import Button from "./UI/Button";
 
 const MainNavigation = () => {
   return (
     <>
       <ul className={styles["main-nav"]}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+            end
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About Us</NavLink>
+          <NavLink
+            to="about"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+            end
+          >
+            About Us
+          </NavLink>
         </li>
         <li>
-          <button>
-            <NavLink>Sign Up / Login</NavLink>
-          </button>
+          <NavLink
+            to="login"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+            end
+          >
+            Login
+          </NavLink>
         </li>
       </ul>
     </>

@@ -10,3 +10,13 @@
 .main-nav li {
     margin: 1rem;
 }
+
+.main-nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color:coral
+}

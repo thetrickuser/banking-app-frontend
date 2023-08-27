@@ -1,0 +1,7 @@
+button {
+    /* font-size: x-large; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: gold;
+    border: none;
+}
