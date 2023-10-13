@@ -1,10 +1,8 @@
 .header {
-    display: flex;
-    align-items: center;
-}
-
-.header p {
-    margin-left: 2rem;
-    font-size: xx-large;
-    width: 50%; 
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 5;
 }
